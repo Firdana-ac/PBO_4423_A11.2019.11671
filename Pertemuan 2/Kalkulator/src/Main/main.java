@@ -1,32 +1,41 @@
-// Muhammad Naufal Firdana Trisya
-// A11.2019.11671
-// 4423
 
-package Main;
-
+package com.company;
 import java.util.Scanner;
 
-public class main {
-    public static void main (String [] args){
+public class Main {
+    static float sum = 0, ram1 = 1, ram2 = 2;
+
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
+        kalkulator alat = new kalkulator();
+        while(ram2 != 0 & ram1 != 0)
+        {
+            sum=0;
+            // Tampilkan pilihan menu
+            alat.menu();
 
-        System.out.println("Angka pertama :");
-        int a = input.nextInt();
+            // Inputkan pilihan
+            int pilihan = input.nextInt();
+            if(pilihan >=1 & pilihan <=5)
+            {
+                // Inputan nominal pertama
+                System.out.print("Masukan Bilangan Ke-1 = ");
+                ram1 = input.nextFloat();
 
-        System.out.println("angaka kedua:");
-        int b = input.nextInt();
+                // Inputan nominal kedua
+                System.out.print("Masukan Bilangan Ke-2 = ");
+                ram2 = input.nextFloat();
 
-        int tambah = a + b ;
-        int kurang = a - b;
-        int kali = a*b;
-        double bagi = a/b;
+                // Proses
+                sum  =  alat.operasArithmetic(pilihan,ram1,ram2);
 
-        System.out.println("\n Penjumlahan:"+ tambah);
-        System.out.println("\n Pengurangan:"+ kurang);
-        System.out.println("\n Perkalian:"+ kali);
-        System.out.println("\n Pembagian:"+ bagi);
-
-
+                // Output result
+                System.out.println(sum);
+            }else
+            {
+                System.out.println("Anda harus mengisi pilihan dengan benar");
+            }
+        }
     }
-
 }
