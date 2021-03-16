@@ -1,8 +1,8 @@
 
-package com.company;
+package Main;
 import java.util.Scanner;
 
-public class Main {
+public class main {
     static float sum = 0, ram1 = 1, ram2 = 2;
 
     public static void main(String[] args)
