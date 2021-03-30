@@ -1,4 +1,4 @@
-package sample;
+package praktikum4;
 
 public class Matrix {
     private final int M;             // number of rows

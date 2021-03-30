@@ -2,7 +2,7 @@
 //A11.2019.11671
 //A11.433
 
-package sample;
+package praktikum4;
 
 public class Main1 {
     public static void main(String[] args) {
