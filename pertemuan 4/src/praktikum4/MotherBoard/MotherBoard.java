@@ -1,4 +1,4 @@
-package praktikum4;
+package praktikum4.MotherBoard;
 class MotherBoard {
 
     // static nested class

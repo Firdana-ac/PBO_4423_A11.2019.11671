@@ -2,7 +2,8 @@
 //A11.2019.11671
 //A11.433
 
-package praktikum4;
+package praktikum4.CPU;
+
 
 public class Main2 {
     public static void main(String[] args) {

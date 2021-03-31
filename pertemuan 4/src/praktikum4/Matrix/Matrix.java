@@ -1,4 +1,4 @@
-package praktikum4;
+package praktikum4.Matrix;
 
 public class Matrix {
     private final int M;             // number of rows

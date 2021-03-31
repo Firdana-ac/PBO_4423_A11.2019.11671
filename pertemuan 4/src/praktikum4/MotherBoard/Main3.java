@@ -2,7 +2,9 @@
 //A11.2019.11671
 //A11.433
 
-package praktikum4;
+package praktikum4.MotherBoard;
+
+import praktikum4.MotherBoard.MotherBoard;
 
 public class Main3 {
     public static void main(String[] args) {
