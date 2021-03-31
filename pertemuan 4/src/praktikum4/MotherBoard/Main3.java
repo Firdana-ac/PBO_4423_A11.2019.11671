@@ -1,6 +1,6 @@
 //Muhammad Naufal Firdana Trisya
 //A11.2019.11671
-//A11.433
+//A11.4423
 
 package praktikum4.MotherBoard;
 
