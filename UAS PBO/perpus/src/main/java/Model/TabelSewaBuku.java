@@ -1,15 +1,15 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Nama: Muhammad Naufal Firdana Trisya
+Nim: A11.2019.11671
+Kelas: A11.4423
  */
 package Model;
 
-import java.util.List;
-import javax.swing.table.AbstractTableModel;
+import java.util.List;/*Untuk memanggil package List pada java */
+import javax.swing.table.AbstractTableModel;/*Untuk memanggil swing table AbstractTableModel pada java*/
 /**
  *
- * @author Dinozera
+ * @author Firdana
  */
 public class TabelSewaBuku  extends AbstractTableModel{
     List<mTable> list_sewaBuku;

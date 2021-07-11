@@ -1,16 +1,16 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Nama: Muhammad Naufal Firdana Trisya
+Nim: A11.2019.11671
+Kelas: A11.4423
  */
 package Koneksi;
 
-import com.mysql.cj.jdbc.MysqlDataSource;
-import java.sql.Connection;
-import java.sql.SQLException;
+import com.mysql.cj.jdbc.MysqlDataSource;/*Untuk memanggil package mysql cj jdbc MysqlDataSource pada java */
+import java.sql.Connection;/*Untuk memanggil package sql Connection pada java */
+import java.sql.SQLException;/*/*Untuk memanggil package sql SQLException pada java */
 /**
  *
- * @author Dinozera
+ * @author Firdana
  */
 public class Koneksi {
     static Connection con;

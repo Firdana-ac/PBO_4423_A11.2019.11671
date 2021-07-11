@@ -1,36 +1,36 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Nama: Muhammad Naufal Firdana Trisya
+Nim: A11.2019.11671
+Kelas: A11.4423
  */
 package Controller;
 
-import DAO.DAOSewaBuku;
-import IDAO.IDAOSewaBuku;
-import Model.TabelSewaBuku;
-import Model.mTable;
-import gui.maingui;
-import java.util.List;
+import Inputan.InputanSewaBuku; /*Memanggil file InputanSewaBuku.java dalam Package Inputan*/
+import Model.TabelSewaBuku; /*Memanggil file TabelSewaBuku.java dalam Package Model*/
+import Model.mTable; /* Memanggil file mTable.java dalam Package Model*/
+import gui.maingui; /*Memanggil maingui.java dalam Package */
+import java.util.List; /*Untuk memanggil package list pada java*/
+import Interfaces.InterfacesSewaBuku; /*Memanggil file InterfacesSewaBuku.java dalam Package Interfaces*/
 
 /**
  *
- * @author Dinozera
+ * @author Firdana
  */
 public class cSewaBuku {
     
     public cSewaBuku(maingui _tampil){
         this._tampilan = _tampil;
-        iDAOSewaBuku = new DAOSewaBuku();
+        InterfacesSewaBuku = new InputanSewaBuku();
     }
     
         public void IsiTable(){
-      list_sewaBuku = iDAOSewaBuku.GetAll();
+      list_sewaBuku = InterfacesSewaBuku.GetAll();
       TabelSewaBuku tabelSewaBuku = new TabelSewaBuku(list_sewaBuku);
       _tampilan.GetTabelData().setModel(tabelSewaBuku);
         
     }
        
        maingui _tampilan;
-       IDAOSewaBuku iDAOSewaBuku;
+       InterfacesSewaBuku InterfacesSewaBuku;
        List<mTable> list_sewaBuku;
 }

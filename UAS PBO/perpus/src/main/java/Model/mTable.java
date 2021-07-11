@@ -1,13 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Nama: Muhammad Naufal Firdana Trisya
+Nim: A11.2019.11671
+Kelas: A11.4423
  */
 package Model;
 
 /**
  *
- * @author Dinozera
+ * @author Firdana
  */
 public class mTable {
     public int id;

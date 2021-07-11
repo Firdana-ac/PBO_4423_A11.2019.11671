@@ -1,34 +1,34 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Nama: Muhammad Naufal Firdana Trisya
+Nim: A11.2019.11671
+Kelas: A11.4423
  */
-package DAO;
-import IDAO.IDAOSewaBuku;
-import Koneksi.Koneksi;
-import Model.mTable;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.Duration;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+package Inputan;
+import Koneksi.Koneksi; /*Untuk memanggil Koneksi.java dalam Package Koneksi*/
+import Model.mTable; /*Untk memanggil mTable.java dalam Package Model*/
+import java.sql.Connection; /*Untuk memanggil package sql connection pada java*/
+import java.sql.PreparedStatement; /*Untuk memanggil package sql PreparedSteatement pada java*/
+import java.sql.ResultSet; /*Untuk memanggil package sql ResultSet pada java*/
+import java.sql.SQLException; /*Untuk memanggil package sql SQLException pada java */
+import java.sql.Statement; /*Untuk memanggil package sql Statement pada java */
+import java.text.ParseException; /*Untuk memanggil package text ParseException pada java */
+import java.text.SimpleDateFormat; /*Untuk memanggil package text SimpleDateFormat pada java */
+import java.time.Duration; /*Untuk memanggil package time Duration pada java */
+import java.time.LocalDate; /*Untuk memanggil package time LocalDate pada java */
+import java.time.format.DateTimeFormatter; /*Untuk memanggil package time format DateTimeFormatter pada java */
+import java.util.ArrayList; /*Untuk memanggil package ArrayList pada java */
+import java.util.Calendar; /*Untuk memanggil package Calender pada java */
+import java.util.Date; /*Untuk memanggil package Date pada java */
+import java.util.List; /*Untuk memanggil package List pada java */
+import java.util.logging.Level; /*Untuk memanggil package logging level pada java */
+import java.util.logging.Logger; /*Untuk memanggil package logging loggerr pada java */
+import Interfaces.InterfacesSewaBuku; /*Untuk memanggil InterfaceSewaBuku.java dalam package Interfaces*/
 
 /**
  *
- * @author Dinozera
+ * @author Firdana
  */
-public class DAOSewaBuku implements IDAOSewaBuku{
+public class InputanSewaBuku implements InterfacesSewaBuku{
      Connection con = Koneksi.GetConnection();
      
     @Override
@@ -73,7 +73,7 @@ public class DAOSewaBuku implements IDAOSewaBuku{
      catch(SQLException e){
          System.out.println("Error");
      }   catch (ParseException ex) {
-             Logger.getLogger(DAOSewaBuku.class.getName()).log(Level.SEVERE, null, ex);
+             Logger.getLogger(InputanSewaBuku.class.getName()).log(Level.SEVERE, null, ex);
          }
     return list_sewaBuku;
     }

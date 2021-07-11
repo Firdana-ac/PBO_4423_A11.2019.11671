@@ -5,7 +5,7 @@
  */
 package gui;
 import Controller.cSewaBuku;
-import DAO.DAOSewaBuku;
+import Inputan.InputanSewaBuku;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -258,7 +258,7 @@ public class maingui extends javax.swing.JFrame {
            JOptionPane.showMessageDialog(this, "Input judul tidak boleh kosong!!","fail",JOptionPane.ERROR_MESSAGE);
            return;
        }
-       DAOSewaBuku DAO = new DAOSewaBuku();
+       InputanSewaBuku DAO = new InputanSewaBuku();
        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dddd");
        
        String _tgl_Pinjam = formatter.format(tanggal);
@@ -280,7 +280,7 @@ public class maingui extends javax.swing.JFrame {
        if(id_selected != 0){
            //kalau masih kosong
            if(tgl_kembali_selected.equals("")){
-               DAOSewaBuku dao = new DAOSewaBuku();
+               InputanSewaBuku dao = new InputanSewaBuku();
                try {
                    dao.KembalikanBuku(id_selected);
                     JOptionPane.showMessageDialog(this, "Buku berhasil dikembalikan!!");
@@ -312,7 +312,7 @@ public class maingui extends javax.swing.JFrame {
            return;
            }
            else{
-               DAOSewaBuku dao = new DAOSewaBuku();
+               InputanSewaBuku dao = new InputanSewaBuku();
                dao.UpdateData(id_selected, _judulBuku);
                JOptionPane.showMessageDialog(this, "Data berhasil terupdate!!");
         CreateTable();
@@ -334,7 +334,7 @@ public class maingui extends javax.swing.JFrame {
 
     private void btn_deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_deleteActionPerformed
           if(id_selected != 0){
-               DAOSewaBuku dao = new DAOSewaBuku();
+               InputanSewaBuku dao = new InputanSewaBuku();
                dao.DeleteData(id_selected);
                JOptionPane.showMessageDialog(this, "Data berhasil terhapus!!");
         CreateTable();
