@@ -17,7 +17,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Dinozera
+ * @author Firdana
  */
 public class maingui extends javax.swing.JFrame {
 
